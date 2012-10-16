@@ -1,11 +1,11 @@
 Catitizer
 =========
 
-- Makes faces into cats.
+- Makes faces into cats. Or other things I guess, but why would you want to do that...
 - Code needs alot of work still, go easy on meee.
 - Faces that aren't getting catitized are not being detected by the framework below... It doesnt seem to like beards very much.
 
-This works by proxying a website through my domain, during the proxy process links are redirected and javascript, html and css are injected.
+This works by proxying a website through the local domain. During the proxy process javascript, html and css are injected and links are redirected.
 
 It pulls all the images off of the site to be Catitized and redirects the images on my proxy copy site to the "scraped" images.
 
