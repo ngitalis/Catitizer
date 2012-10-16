@@ -1,13 +1,20 @@
 {
-  "name": "Catitizer",
+  "name": "catitizer",
   "description": "You Like it.",
-  "version": "0.0.1",
+  "version": "0.0.8",
   "dependencies": {
     "express": ">= 3.x.x",
-    "now" : ">= 0.8.0",
-    "fs" : "x.x.x",
-    "http-get" : "x.x.x",
+    "now": ">= 0.8.0",
+    "fs": "x.x.x",
+    "http-get": "x.x.x",
     "request": "x.x.x",
-    "jsdom" : "x.x.x"
+    "jsdom": "x.x.x"
+  },
+  "subdomain": "tunaghost.catitizer",
+  "scripts": {
+    "start": "app.js"
+  },
+  "engines": {
+    "node": "0.6.x"
   }
 }
