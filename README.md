@@ -13,6 +13,10 @@ This is done to avoid canvas "taint" when the face detection routine goes to wor
 
 
 
+Good image to try: http://cva.stanford.edu/images/people/current/Group_April_2008.jpg
+
+
+
 Stuff I Used
 ============
   - request : for grabbing websites
