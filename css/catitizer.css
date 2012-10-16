@@ -180,3 +180,6 @@ body {
 
 	color: red;
 }
+.input-error {
+   border: 3px solid red !important;
+}
