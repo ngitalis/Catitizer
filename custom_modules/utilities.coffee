@@ -54,17 +54,17 @@ module.exports.bootstrap = ( jQuery, path ) ->
 
 	# header
 	header = "<div id='catitizer-header'>   
-				<div id='catitizer-logo'> Catitizer </div>
-				<img id='catitizer-logo-img' src='images/cats/tumblr_m2weitnirP1rtuomto1_500.png' />
-
-					<div class='ui-progress-bar ui-container' id='catitizer-progess-container'>
-						<div class='ui-progress' id='catitizer-progess-bar' style='width: 7%;'>
-							<span class='ui-label' style='display:none;'>
-								Meow . . .  <b class='catitize-value'>&nbsp;&nbsp;7%</b>
-							</span>
-						</div>
-					</div> 
-
+				<a href='/'>
+					<div id='catitizer-logo'> Catitizer </div>
+					<img id='catitizer-logo-img' src='images/cats/tumblr_m2weitnirP1rtuomto1_500.png' />
+				</a>
+				<div class='ui-progress-bar ui-container' id='catitizer-progess-container'>
+					<div class='ui-progress' id='catitizer-progess-bar' style='width: 7%;'>
+						<span class='ui-label' style='display:none;'>
+							Meow . . .  <b class='catitize-value'>&nbsp;&nbsp;7%</b>
+						</span>
+					</div>
+				</div> 
 			</div>"
 	$('body').append(header)
 

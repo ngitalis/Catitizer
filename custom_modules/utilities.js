@@ -60,7 +60,7 @@
     $('head').append("<link href='css/catitizer.css' rel='stylesheet' type='text/css' />");
     $('head').append("<link href='css/ui-progress-bar.css' rel='stylesheet' type='text/css' />");
     $('head').append("<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>");
-    header = "<div id='catitizer-header'>   				<div id='catitizer-logo'> Catitizer </div>				<img id='catitizer-logo-img' src='images/cats/tumblr_m2weitnirP1rtuomto1_500.png' />					<div class='ui-progress-bar ui-container' id='catitizer-progess-container'>						<div class='ui-progress' id='catitizer-progess-bar' style='width: 7%;'>							<span class='ui-label' style='display:none;'>								Meow . . .  <b class='catitize-value'>&nbsp;&nbsp;7%</b>							</span>						</div>					</div> 			</div>";
+    header = "<div id='catitizer-header'>   				<a href='/'>					<div id='catitizer-logo'> Catitizer </div>					<img id='catitizer-logo-img' src='images/cats/tumblr_m2weitnirP1rtuomto1_500.png' />				</a>				<div class='ui-progress-bar ui-container' id='catitizer-progess-container'>					<div class='ui-progress' id='catitizer-progess-bar' style='width: 7%;'>						<span class='ui-label' style='display:none;'>							Meow . . .  <b class='catitize-value'>&nbsp;&nbsp;7%</b>						</span>					</div>				</div> 			</div>";
     $('body').append(header);
     return $('body').append("<div id='catitizer-pathname' style='display: none;'>" + path + "</div>");
   };
