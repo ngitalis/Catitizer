@@ -27,7 +27,7 @@ app.post('/', function(req, res) {
     var path = utilities.checkURL( req.body['url'] );
 
     // get the site and make a virtual dom
-    var options = { uri: path };
+    var options = { uri: path, timeout: 5000 };
     request(options, function(err, response, body){
         if (!err && response.statusCode == 200) {
             console.log("success!");
@@ -162,6 +162,7 @@ function flashError( res ) {
 
             // inject error message
             $('#error').html("Invalid URL");
+            $('#catitizer-url').addClass('input-error');
 
             // send out site
             res.writeHead(200);
