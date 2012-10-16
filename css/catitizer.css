@@ -1,0 +1,182 @@
+body {
+	margin-top: 50px !important;
+}
+
+#catitizer-logo-frame {
+	width: 300px;
+	height: 200px;
+
+	margin: 0 auto;
+}
+#catitizer-logo-large {
+	text-align: center;
+	font-family: 'Lobster';
+
+	font-size: 64px;
+
+	z-index: 2;
+}
+
+#catitizer-logo-img-large {
+	position: block;
+
+	width: 150px;
+	height: 150px;
+
+	z-index: 1;
+}
+
+#catitizer-form-frame {
+	width: 500px;
+	height: 200px;
+
+	margin: 0 auto;
+
+	z-index: 2;
+}
+
+#catitizer-form-outer {
+	padding: 20px 20px 20px 20px;
+
+	background: #DCDCDC;
+
+	border-left: solid 1px #D1D1D1;
+	border-right: solid 1px #D1D1D1;
+	border-top: solid 1px #A7A7A7;
+	border-bottom: solid 2px #FFF;
+
+	-webkit-border-radius: .7em; 
+	-moz-border-radius: .7em;
+	border-radius: .7em;
+	
+	z-index: 2;
+}
+
+#catitizer-form-inner {
+	height: 100%;
+
+	background: #444;
+
+	padding-bottom: 1px;
+
+	-webkit-border-radius: .7em; 
+	-moz-border-radius: .7em;
+	border-radius: .7em;
+
+	z-index: 2;
+}
+
+#catitizer-form-title {
+	font-family: 'Lobster';
+	font-size: 36px;
+
+	color: white;
+
+	text-align: center;
+
+	z-index: 2;
+}
+
+#catitizer-form {
+	text-align: center;
+
+	margin-top: 20px;
+}
+#catitizer-url {
+	height: 30px;
+	width: 420px;
+
+	border: 1px solid #999;
+
+	padding-left: 5px;
+	padding-right: 5px;
+
+	font-weight: bold;
+
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+}
+#catitize {
+	width: 100px;
+	height: 50px;
+
+	font-family: 'Lobster';
+	font-size: 24px;
+
+	margin-top: 20px;
+
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+}
+
+#catitizer-header {
+	position:fixed; 
+	width:100%;
+	height: 50px;
+	
+	top:0px; 
+	left: 0px;
+
+	background: white;
+
+	border-bottom: 5px solid black;
+
+	z-index: 100000;
+}
+
+#catitizer-logo {
+	position:fixed;
+
+	font-family: 'Lobster';
+	font-size: 36px;
+
+	margin-top: 0px;
+	margin-left: 20px;
+}
+#catitizer-logo-img {
+	position:fixed;
+
+	width: 27px;
+	height: 27px;
+
+	margin-top: 10px;
+	margin-left: 33px;
+}
+
+#catitizer-break {
+	height: 50px;
+}
+#catitizer-frame {
+	display: block;
+
+	margin: 0 auto;
+}
+
+#catitizer-progess-container {
+	position:fixed; 
+
+	margin-left: 200px;
+	margin-top: 10px;
+
+	width: 80%;
+}
+
+.catitizer-progress-done {
+	background-color: #87CEEB !important;
+}
+
+.face {
+	border: none;
+
+	z-index: 9999;
+}
+
+#error {
+	text-align: center;
+
+	font-weight: bold;
+
+	color: red;
+}
