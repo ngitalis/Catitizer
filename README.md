@@ -1,10 +1,9 @@
 Catitizer
 =========
 
-Makes faces into cats.
-Code needs alot of work still, go easy on meee.
-
-Faces that aren't getting catitized are not being detected by the framework below :(. It doesnt seem to like beards very much.
+- Makes faces into cats.
+- Code needs alot of work still, go easy on meee.
+- Faces that aren't getting catitized are not being detected by the framework below... It doesnt seem to like beards very much.
 
 USED:
 NodeJS
