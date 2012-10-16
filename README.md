@@ -5,8 +5,9 @@ Catitizer
 - Code needs alot of work still, go easy on meee.
 - Faces that aren't getting catitized are not being detected by the framework below... It doesnt seem to like beards very much.
 
-USED:
-NodeJS
+
+Stuff I Used
+============
   - request : for grabbing websites
   - express : fast server setup
   - jsdom : virtual DOM on the server side to simulate jquery and inject code.
