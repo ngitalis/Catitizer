@@ -32,7 +32,7 @@ function run( ) {
 function pullImages( faces, count, callback ) {
 	if ( count < faces.length ) {
 		var img = $(faces).get(count);
-		setProgress( "Initialing Catabase . . .", 20 + ( ( 60 / faces.length ) * count ) );
+		setProgress( "Initializing Catabase . . .", 20 + ( ( 60 / faces.length ) * count ) );
 
 		if( $(img).attr("id") != "catitizer-logo-img" ) {
 			now.getImage( $(img).attr("src"), function( newpath ) {
@@ -68,7 +68,7 @@ function catitize( ) {
 
 
 	actuallyDoingItNow( facesFound, 0, function( ) {
-		setProgress( "Hire Me!", 100 );
+		setProgress( "Done!", 100 );
 		$("#catitizer-progess-bar").addClass("catitizer-progress-done");
 	});
 

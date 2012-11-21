@@ -1,7 +1,7 @@
 {
   "name": "catitizer",
   "description": "You Like it.",
-  "version": "0.0.8",
+  "version": "0.0.8-3",
   "dependencies": {
     "express": ">= 3.x.x",
     "now": ">= 0.8.0",
