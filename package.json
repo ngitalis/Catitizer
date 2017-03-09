@@ -4,11 +4,12 @@
   "version": "0.0.8-3",
   "dependencies": {
     "express": ">= 3.x.x",
-    "now": ">= 0.8.0",
-    "fs": "x.x.x",
-    "http-get": "x.x.x",
+    "now": "git+ssh://git@github.com:Flotype/now.git#0.8.0",
+    "http-request": "x.x.x",
     "request": "x.x.x",
-    "jsdom": "x.x.x"
+    "jsdom": "x.x.x",
+    "body-parser": "x.x.x",
+    "socket.io": "0.9.17"
   },
   "subdomain": "tunaghost.catitizer",
   "scripts": {

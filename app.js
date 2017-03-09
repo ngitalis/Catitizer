@@ -2,24 +2,18 @@ var request = require('request');
 var express = require('express');
 var jsdom = require('jsdom');
 var fs = require('fs');
-var http = require('http-get');
+var http = require('http-request');
 var nowjs = require('now');
+var bodyParser = require('body-parser')
 var utilities = require('./custom_modules/utilities');
 var port = process.env.PORT || 3000
 var app = express( );
 
+
 // Configurations
-app.configure(
-    function()
-    {
-        app.use(express.static(__dirname + '/'));
-        app.use(express.bodyParser());
-        app.use(express.methodOverride());
-        app.use(app.router);
-    });
-
-
-
+app.use(express.static(__dirname + '/'));
+app.use(bodyParser.json( ));
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // on post
 app.post('/', function(req, res) {
@@ -111,19 +105,21 @@ function proxySite( body, path, res ) {
         utilities.bootstrap( $, path );
 
         // proxy out site
-        res.writeHead(200);
-        res.end(window.document.innerHTML);
+        // res.writeHead(200);
+        res.end(window.document.documentElement.innerHTML);
       }
     );
 }
 
 function renderImage( path, res ) {
      // Get image Frame
+     console.log("foo");
      fs.readFile( __dirname + "/imageframe.html", 'utf8', function read(err, data) {
         if (err) {
             console.log(err);
             return;
         }
+         console.log("bar");
         // create virtual dom
         jsdom.env(
           data,
@@ -140,8 +136,8 @@ function renderImage( path, res ) {
             $('#catitizer-frame').attr( "src", path );
 
             // send out site
-            res.writeHead(200);
-            res.end(window.document.innerHTML);
+            // res.writeHead(200);
+            res.send(window.document.documentElement.innerHTML);
           }
         );
     });
@@ -165,8 +161,8 @@ function flashError( res ) {
             $('#catitizer-url').addClass('input-error');
 
             // send out site
-            res.writeHead(200);
-            res.end(window.document.innerHTML);
+            // res.writeHead(200);
+            res.end(window.document.documentElement.innerHTML);
           }
         );
     });
